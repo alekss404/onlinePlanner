@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link href="bootstrap-grid.min.css" rel="stylesheet">
+  <link href = "ultimatePlanner.css" rel = "stylesheet">
+  <script src = "ultimatePlanner.js"></script>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat:wght@100&family=Playfair+Display&display=swap');
+</style>
+
+</head>
+<body>
+  <div id = "top">
+   <center>
+
+     <h1 id = "welcome"> - Welcome to the Online Planner - </h1>
+   </center>
+  </div>
+
+  <div class="container"><!--Dont mess with these-->
+  <div class="row">
+    <!-- LEFT -->
+    <div class="col-sm-4" id = "leftDiv">
+      <div id="myDIV" class="header">
+
+        <h3>Task Name...</h3>
+        <input type="text" id="myInput" placeholder="Add To List"><br><br><br>
+        <h3>When does it start? (Optional)</h3>
+        <input type="text" id="startDate" placeholder="YYYY-MM-DD"><br><br><br>
+        <h3>When is it due? (Optional)</h3>
+        <input type="text" id="endDate" placeholder="YYYY-MM-DD"><br><br><br>
+        <br><br>
+        <center>
+        <span onclick="newElement()" class="addBtn">Create Task</span>
+      </center>
+      </div>
+    </div>
+     <!-- CENTER  -->
+    <div class="col-sm-6" id = "centerDiv">
+
+      <div id='calendar'></div>
+
+      <!-- CALENDAR -->
+      <meta charset='utf-8' />
+        <link href='main.css' rel='stylesheet' />
+        <script src='main.js'></script>
+        <script>
+
+          document.addEventListener('DOMContentLoaded', function() {
+            handleDocumentLoaded();
+          });
+
+        </script>
+      </div>
+      <!-- RIGHT - Clock?? -->
+      <div class="col-sm-2" id = "rightDiv">
+        <center>
+        <h3>To Do:</h3>
+        <ul id="taskList">
+        </ul>
+      </center>
+
+
+
+
+</body>
+</html>
